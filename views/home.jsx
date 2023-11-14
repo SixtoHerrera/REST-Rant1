@@ -6,7 +6,7 @@ function home () {
     return (
         <Def>
             <main>
-    <h1>HOME</h1>
+    <h1>REST-rant</h1>
     <div>
     <img src="/images/2023.jpg" alt="2023 image"/>
       <div>
