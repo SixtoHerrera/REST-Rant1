@@ -27,6 +27,20 @@ app.get('/', (req, res) => {
     }
   })
   
+  // EDIT
+  router.get('/:id/edit', (req, res) => {
+    let id = Number(req.params.id)
+    if (isNaN(id)) {
+        res.render('error404')
+    }
+    else if (!places[id]) {
+        res.render('error404')
+    }
+    else {
+      res.render('places/edit', { place: places[id] })
+    }
+  })
+  
   
   router.post('/', (req, res) => {
     console.log(req.body)
