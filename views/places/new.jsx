@@ -40,6 +40,8 @@ function new_form (data) {
 
                 <input className="btn btn-primary" type="submit" value="Add Place" />
             </form>
+           
+
 
 
           </main>

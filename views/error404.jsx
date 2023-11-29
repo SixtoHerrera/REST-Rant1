@@ -7,13 +7,12 @@ function error404 () {
           <main>
               <h1>404: PAGE NOT FOUND</h1>
               <p>Oops, sorry, we can't find this page!</p>
-              <img src="/images/cat.jpg" alt="cat image"/>
-      <div>
-        Photo by <a href="AUTHOR_LINK">Brenda Godinez</a> on <a href="UNSPLASH_LINK">Unsplash</a>
-      </div>
-      </div>
-          </main>
-      </Def>
+              <img src="/images/cat.jpg" alt="cat image" width="500" height="600"/>
+              <div>
+              Photo by <a href="https://unsplash.com/@peterlaster?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Pedro Lastra</a> on <a href="https://unsplash.com/photos/white-and-brown-city-buildings-during-daytime-Nyvq2juw4_o?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+              </div>
+            </main>
+        </Def>
     )
   }
   

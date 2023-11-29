@@ -16,11 +16,13 @@ function show (data) {
     let sumRatings = data.place.comments.reduce((tot, c) => {
       return tot + c.stars
     },0)
+    // Loop to make number of stars
     let averageRating = Math.round(sumRatings / data.place.comments.length)
     let stars = ''
     for (let i=0; i < averageRating; i++) {
       stars += ' ⭐ '
     }
+    //changing the rate of stars inside H3
     rating = (
       <h3>
         {stars} stars

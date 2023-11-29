@@ -6,12 +6,20 @@ async function seed() {
     let place = await db.Place.findOne({ name: 'H-Thai-ML' })
 
     // Create a fake sample comment.
-    let comment = await db.Comment.create({
+    let comment = await db.Comment.create([
+        {
         author: 'Famished Fran',
         rant: false,
         stars: 5.0,
         content: 'Wow, simply amazing! Highly recommended!'
-    })
+         }
+         {
+            author: 'Sixto Herrera',
+            rant: true,
+            stars: 4.9,
+            content: 'Hes amazing'
+        }
+])
 
     // Add that comment to the place's comment array.
     place.comments.push(comment.id)
